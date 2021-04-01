@@ -1,0 +1,105 @@
+html {
+  box-sizing: border-box;
+  font-size: 1rem;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  word-break: break-word;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+  font-size: 1rem;
+  min-width: 200px;
+  font-style: normal;
+  width: 100%;
+}
+
+/* Links
+     ========================================================================== */
+a {
+  cursor: pointer;
+  color: #707070;
+
+  transition: opacity 0.24s ease 0s;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:visited {
+  color: #707070;
+}
+a:hover {
+  opacity: 0.64;
+  color: #5acee8;
+}
+a:active {
+  transform: translate(0, 1px);
+}
+/* Buttons
+     ========================================================================== */
+[role="button"] {
+  cursor: pointer;
+}
+/* Forms
+       ========================================================================== */
+input,
+select,
+textarea {
+  font: inherit;
+  height: auto;
+  width: auto;
+  margin: 0;
+}
+/* Tables
+     ========================================================================== */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Lists
+     ========================================================================== */
+ol,
+ul {
+  list-style: none;
+}
+/* Blockquotes
+     ========================================================================== */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+/* Text-level semantics
+     ========================================================================== */
+b,
+strong {
+  font-weight: 800;
+}
+/* Misc
+       ========================================================================== */
+::selection {
+  background-color: #133c55;
+  color: #fff;
+}
+#root {
+  min-height: 100vh;
+}
+.tether-element {
+  z-index: 1000;
+}
