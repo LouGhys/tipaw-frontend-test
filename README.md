@@ -11,9 +11,11 @@ To complete the assessment:
 3. Run it locally: `expo start`
 4. Read the [issues](./issues) description
 5. Solve or implement the [issues](./issues). Preferably create branches or merge requests per issue in order to review the changes in isolation 🙂
-6. Upload your solution to a personal repository (Gitlab or Github) and send us the link back.
+6. Upload your solution to a personal repository (Gitlab or Github) and send us the link so we can review everything.
 
 Feel free to remove, add or refactor any component or the project itself. Show us how you'll bring a small idea closer to production 💪
+
+*Bonus points if you can deploy your solution so we can view it in the browser directly.*
 
 ## GraphQL Note
 
