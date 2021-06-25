@@ -7,8 +7,11 @@
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.4",
+    "@types/react-dom": "^17.0.8",
     "classnames": "^2.3.0",
-    "graphql": "^15.5.0",
+    "graphql": "^15.5.1",
     "html-react-parser": "^1.2.4",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
@@ -16,13 +19,17 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "typescript": "^4.3.4",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "download-schema": "npx apollo service:download --endpoint=https://api-pro.app.tipaw.com/app graphql-schema.json",
+    "codegen": "npx apollo codegen:generate --localSchemaFile=graphql-schema.json --target=typescript --tagName=gql",
+    "deploy": "npm run build; npx netlify deploy --prod --dir build"
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +48,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.11",
+    "@types/react-router-dom": "^5.1.7"
   }
 }
