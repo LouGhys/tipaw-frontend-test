@@ -15,6 +15,12 @@ export enum PaymentMethodsEnum {
   qrCode = "qrCode",
 }
 
+export interface GetArgs {
+  limit: number;
+  skip: number;
+  sort?: string | null;
+}
+
 //==============================================================
 // END Enums and Input Objects
 //==============================================================

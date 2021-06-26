@@ -32,6 +32,14 @@ Again a personal preference, but absolute paths enforces a clean folder and modu
 Eg: a global Header component that should be found from anywhere should be imported: import {Header} from 'components'
 Eg: But a very specific component like CartItem better not use absolute paths, and doesn't have to follow good project structure, as it will likely be imported in a component close to it (import {CartItem} from './components': in the Cart page for example)
 
+# 2: Improve the pro listing page display
+
+On each pro card, add atleast:
+
+- payment methods accepted (paymentMethods: [PaymentMethodsEnum!])
+- how many vets there are in the practice (employee_numbers: Float)
+- number of assistants (numberOfASV: Float)
+- display an image for each professional (pictures: [PictureWrapperComponent!])
 # 3: Implement an add new professional page
 
 New page to create new pros (frontend only)
