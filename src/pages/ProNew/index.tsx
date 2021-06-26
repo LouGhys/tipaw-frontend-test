@@ -87,7 +87,7 @@ export const ProNew = () => {
                 {({ input, meta }) => (
                   <div className={styles('input-wrapper')}>
                     <p className={styles('input-label')}>Name *</p>
-                    <textarea className={styles('input-text')} placeholder='Name' {...input} />
+                    <input className={styles('input-text')} placeholder='Name' {...input} />
                     {(meta.error || meta.submitError) && meta.touched && (
                       <div className={styles('input-error')}>{meta.error || meta.submitError}</div>
                     )}
