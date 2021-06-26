@@ -4,6 +4,14 @@
   padding-right: 30px;
   margin: auto;
 
+  .limit {
+    margin-bottom: 12px;
+  }
+
+  .limit-label {
+    margin-right: 8px;
+  }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
