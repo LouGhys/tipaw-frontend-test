@@ -17,6 +17,9 @@ export const Header: FC = ({ ...props }) => {
           </Link>
           {/* </NavLink> */}
         </div>
+        <Link to='/new/pro'>
+          <button className={styles('new-pro-button')}>New Pro</button>
+        </Link>
       </div>
     </div>
   );
