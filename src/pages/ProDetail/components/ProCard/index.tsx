@@ -2,13 +2,13 @@ import classNames from 'classnames/bind';
 import parse from 'html-react-parser';
 import React, { FC } from 'react';
 import { Link } from 'react-router-dom';
-import { GetExchangeRates_pros } from '../ExchangeRates/graphql/__generated__/GetExchangeRates';
+import { GetPros_pros } from '../ProCardQueryWrapper/graphql/__generated__/GetPros';
 import styleIdentifiers from './ProCard.scss';
 
 const styles = classNames.bind(styleIdentifiers); // use this to parse the html string fields
 
 export type ProCardProps = {
-  pro: GetExchangeRates_pros;
+  pro: GetPros_pros;
 };
 
 export const ProCard: FC<ProCardProps> = ({ pro, ...props }) => {
