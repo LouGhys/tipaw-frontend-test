@@ -1,0 +1,141 @@
+.ProNew {
+  max-width: 1320px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: auto;
+
+  .done-wrapper {
+    text-align: center;
+
+    .done-icon {
+      margin-top: 20px;
+      width: 140px;
+      height: 140px;
+    }
+  }
+
+  .form-wrapper {
+    max-width: 500px;
+    margin: auto;
+  }
+
+  .input-wrapper {
+    margin: 12px 0;
+  }
+
+  .input-label {
+    margin-bottom: 8px;
+    color: #707070;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  .input-text {
+    background: #ebeaea;
+    border-radius: 12px;
+    width: 100%;
+    padding: 8px 14px;
+    border: none;
+  }
+
+  .input-text-area {
+    min-height: 100px;
+  }
+
+  .input-error {
+    font-weight: 600;
+    color: #e23636;
+    margin: 12px 8px;
+    margin-top: 6px;
+  }
+
+  .file-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .dropbox {
+    border: 3px dashed #9599a3;
+    background: #ebeaea;
+    border-radius: 12px;
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dropbox-content > img {
+    width: 36px;
+    height: 46px;
+  }
+
+  .preview-image-container {
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+
+    .preview-image-wrapper {
+      flex: none;
+      border-radius: 12px;
+      width: 75px;
+      height: 75px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+
+      .preview-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        object-fit: cover;
+      }
+
+      .remove-button {
+        font-weight: 800;
+        font-size: 24px;
+        color: white;
+        background: rgba($color: #9599a3, $alpha: 0.8);
+        padding: 2px 8px;
+        position: absolute;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .submit-button {
+    margin-top: 12px;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-weight: 800;
+    background: #53ceea;
+    cursor: pointer;
+
+    &[aria-busy='true'],
+    &:disabled {
+      background: #9599a3;
+      color: #b2b5bb;
+      cursor: not-allowed;
+    }
+
+    &[aria-busy='true'] {
+      cursor: wait;
+    }
+  }
+}
