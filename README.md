@@ -1,5 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/83e11d6c-1edb-454c-a65c-191a93030bf7/deploy-status)](https://app.netlify.com/sites/serene-shockley-d25644/deploys)
 
+Demo available [here](https://serene-shockley-d25644.netlify.app/)
+
 # Tipaw Pro List - Lou Ghys
 
 This is a simple app to display the list of professions from Tipaw. When you find one you're interested in you can get more details.
