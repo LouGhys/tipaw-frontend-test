@@ -31,3 +31,32 @@ By default, I make every component use FC (from react, for typescript support), 
 Again a personal preference, but absolute paths enforces a clean folder and module structure, and ties really well with my previes setup (no export defaults, index files).
 Eg: a global Header component that should be found from anywhere should be imported: import {Header} from 'components'
 Eg: But a very specific component like CartItem better not use absolute paths, and doesn't have to follow good project structure, as it will likely be imported in a component close to it (import {CartItem} from './components': in the Cart page for example)
+
+# 4: Implement the ProDetail page
+
+Choose any fields to show a nice overview of the detail page
+
+My choices:
+
+- title
+- large image
+- employees
+  - assitant amount
+  - works amount
+- services
+  - title fr
+  -
+- visit information:
+  - spoken langs
+  - accepted payment methods
+- contact information:
+  - phone
+  - mobile phone
+  - email
+  - website
+  - address
+    - city
+    - zip
+    - street
+    - number
+  - map (localisation.coordinates for map)
