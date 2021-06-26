@@ -1,7 +1,7 @@
 import { gql } from '@apollo/client';
 
-export const EXCHANGE_RATES = gql`
-  query GetExchangeRates {
+export const GET_PROS = gql`
+  query GetPros {
     pros: prosGetMany(professional_type: vet) {
       _id
       titleMulti {

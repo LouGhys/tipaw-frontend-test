@@ -4,29 +4,29 @@
 // This file was automatically generated and should not be edited.
 
 // ====================================================
-// GraphQL query operation: GetExchangeRates
+// GraphQL query operation: GetPros
 // ====================================================
 
-export interface GetExchangeRates_pros_titleMulti {
+export interface GetPros_pros_titleMulti {
   __typename: "TranslatableComponent";
   fr: string | null;
 }
 
-export interface GetExchangeRates_pros_address {
+export interface GetPros_pros_address {
   __typename: "AddressComponent";
   city: string;
   street: string | null;
 }
 
-export interface GetExchangeRates_pros {
+export interface GetPros_pros {
   __typename: "ProSchema";
   _id: string;
-  titleMulti: GetExchangeRates_pros_titleMulti | null;
-  address: GetExchangeRates_pros_address | null;
+  titleMulti: GetPros_pros_titleMulti | null;
+  address: GetPros_pros_address | null;
   description: string | null;
   spokenLanguages: string[] | null;
 }
 
-export interface GetExchangeRates {
-  pros: GetExchangeRates_pros[];
+export interface GetPros {
+  pros: GetPros_pros[];
 }

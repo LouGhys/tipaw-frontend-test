@@ -50,3 +50,31 @@ When submitted:
 - show fake loading
 - after show success
 - after redirect to listing page
+# 4: Implement the ProDetail page
+
+Choose any fields to show a nice overview of the detail page
+
+My choices:
+
+- title
+- large image
+- employees
+  - assitant amount
+  - works amount
+- services
+  - title fr
+  -
+- visit information:
+  - spoken langs
+  - accepted payment methods
+- contact information:
+  - phone
+  - mobile phone
+  - email
+  - website
+  - address
+    - city
+    - zip
+    - street
+    - number
+  - map (localisation.coordinates for map)
