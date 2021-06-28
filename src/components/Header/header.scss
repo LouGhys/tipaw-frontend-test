@@ -1,0 +1,28 @@
+.header-wrapper {
+  line-height: 1.2;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: white;
+
+  .header-container {
+    padding: 15px 0px;
+    max-width: 1320px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: auto;
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    img {
+      height: 50px;
+    }
+  }
+}
